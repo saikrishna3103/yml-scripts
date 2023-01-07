@@ -1,0 +1,9 @@
+---
+- name: practise
+  hosts: all
+  become: true
+  tasks: 
+    - name: installing httpd
+      yum:
+        name: httpd
+        state: absent
