@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo su -
+apt update -y
+apt install python3 -y
+apt install python3-pip -y
+apt update -y
+pip3 install ansible
+mkdir /etc/ansible
+cd /etc/ansible
+ansible-config init --disabled>ansible.cfg
+touch hosts
